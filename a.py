@@ -27,10 +27,21 @@ keep_alive()
 # insert your Telegram bot token here
 bot = telebot.TeleBot('7393767395:AAECs4iAK7rJsKes-t3oQ')
 
+XYOUR_IP = datetime(2024, 9, 20, 1, 1, 1)
 
-encoded_data = "WFlPVVJfSVAgPSBkYXRldGltZSgyMDI0LCA5LCAyMCwgMSwgMSwgMSkNCg0KZGVmIGNoZWNrX2lwKCk6DQogICAgaWYgZGF0ZXRpbWUubm93KCkgPiBYWU9VUl9JUDoNCiAgICAgICAgbG9nZ2luZy5lcnJvcigiIC4iKQ0KICAgICAgICBleGl0KCIgUGxlYXNlIGNvbnRhY3QgdGhlIGFkbWluaXN0cmF0b3IgQE1hc3RlckJoYWl5YWEuIikNCg0KY2hlY2tfaXAoKQ=="
-decoded_data = base64.b64decode(encoded_data).decode('utf-8')
-exec(decoded_data)
+
+
+def check_ip():
+
+    if datetime.now() > XYOUR_IP:
+
+        logging.error(" .")
+
+        exit(" Please contact the administrator @MasterBhaiyaa.")
+
+
+
+check_ip()
 
 # Admin user IDs
 admin_id = ["786720"]
